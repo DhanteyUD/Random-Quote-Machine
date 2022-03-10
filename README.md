@@ -1,5 +1,5 @@
 ## Random Quote Generator
 
-![Screen](Screen.png)
+![Screen](screen.png)
 
 Still Under Active Development ...
