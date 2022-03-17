@@ -14,6 +14,14 @@ const colors = [
   '#77B1A9',
   '#73A857',
   '#000000',
+  '#426871',
+  '#F64F5C',
+  '#002050',
+  '#843629',
+  '#558390',
+  '#12989E',
+  '#6B2B63',
+  '#8E3C64',
 ];
 
 let currentQuote = '';
@@ -28,7 +36,6 @@ function getQuotes() {
     success: (jsonQuotes) => {
       if (typeof jsonQuotes === 'string') {
         quotesData = JSON.parse(jsonQuotes);
-        console.log(quotesData);
       }
     },
   });
@@ -85,7 +92,7 @@ function getQuote() {
     },
     1000
   );
-  $('.button').animate(
+  $('#new-quote').animate(
     {
       backgroundColor: colors[color],
     },
@@ -100,37 +107,3 @@ $(document).ready(function () {
 
   $('#new-quote').on('click', getQuote);
 });
-
-//   $('.quote-text').animate({ opacity: 0 }, 500, function () {
-//     $(this).animate({ opacity: 1 }, 500);
-//     $('#text').text(randomQuote.quote);
-//   });
-
-//   $('.quote-author').animate({ opacity: 0 }, 500, function () {
-//     $(this).animate({ opacity: 1 }, 500);
-//     $('#author').html(randomQuote.author);
-//   });
-
-//   var color = Math.floor(Math.random() * colors.length);
-//   $('html body').animate(
-//     {
-//       backgroundColor: colors[color],
-//       color: colors[color],
-//     },
-//     1000
-//   );
-//   $('.button').animate(
-//     {
-//       backgroundColor: colors[color],
-//     },
-//     1000
-//   );
-// }
-
-// $(document).ready(function () {
-//   getQuotes().then(() => {
-//     getQuote();
-//   });
-
-//   $('#new-quote').on('click', getQuote);
-// });
