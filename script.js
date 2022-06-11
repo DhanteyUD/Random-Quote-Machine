@@ -92,12 +92,6 @@ function getQuote() {
     },
     1000
   );
-  $('#new-quote').animate(
-    {
-      backgroundColor: colors[color],
-    },
-    1000
-  );
 }
 
 $(document).ready(function () {
