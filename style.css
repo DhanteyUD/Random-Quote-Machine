@@ -23,7 +23,7 @@ body {
 .quote-box {
   max-width: 600px;
   display: grid;
-  margin: 8% auto auto auto;
+  margin: auto auto;
   border-radius: 20px;
   padding: 40px 50px;
   display: table;
