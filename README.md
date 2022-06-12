@@ -1,9 +1,5 @@
 ## Random Quote Generator
 
-Desktop View
-![Desktop View](DesktopView.png)
-
----
-
-Mobile View
+![Desktop View](DesktopView.png) 
 ![Mobile View](MobileView.png)
+
