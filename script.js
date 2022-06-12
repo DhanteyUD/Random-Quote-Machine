@@ -85,7 +85,7 @@ function getQuote() {
   });
 
   var color = Math.floor(Math.random() * colors.length);
-  $('html body').animate(
+  $('#wrapper').animate(
     {
       backgroundColor: colors[color],
       color: colors[color],
